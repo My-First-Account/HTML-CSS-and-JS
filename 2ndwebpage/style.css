@@ -1,0 +1,215 @@
+body {
+    font-family: 'Markazi Text', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header */
+.back-header {
+    background-color: #333; /* Adjust color as needed */
+    padding: 10px;
+}
+
+/* Style for the back button */
+.back-button {
+    display: inline-block;
+}
+
+.back-button a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Adjust padding */
+    border: 1px solid #fff; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.back-button a:hover {
+    background-color: #555; /* Background color on hover */
+}
+
+header {
+    background-color: #e8e6e6;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 15px;
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+#hero {
+    text-align: center;
+    background-image: url('./images/round.jpg');
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    height: auto;
+}
+
+#hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 30px;
+}
+
+article {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #e8e6e6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.img-class {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #e8e6e6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 1px solid #444;
+}
+
+@media (max-width: 1024px) {
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero {
+        padding: 40px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        flex: 1 1 100%;
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
+
+.footer-para {
+    color: #333;
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    article h2 {
+        font-size: 1.2em;
+    }
+
+    article p {
+        font-size: 0.9em;
+    }
+
+    /* Ensure images are responsive in small screens */
+    .img-class {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust article padding and margins for small screens */
+    article {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px 15px;
+    }
+}
